@@ -65,11 +65,12 @@ change(preview.enabled);
 * 
 * Return 	urls (array)
 */
-function getURL(key){
-  console.log(key)
+function getURL(key1,key2){
+  var urls = [key1.url, key2.url]
+  return urls
 }
 
-console.log(getURL(preview.resolutions));
+getURL(preview.images[0].resolutions[0], preview.images[0].resolutions[1])
 /*
 * Function that retrieves the first nested key and value pairing
 * from the values of "images", stores them in a new object called 
