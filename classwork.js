@@ -38,6 +38,13 @@ var preview = {
 * 			string
 * Return 	isEnabled (string)
 */
+function retrieve(key) {
+  var isEnabledBoolean = key;
+  var isEnabled = isEnabledBoolean.toString();
+  return typeof isEnabled; 
+}
+
+retrieve(preview.enabled)
 
 /*
 * Function that changes the value from the key "enabled" to true, and returns 
@@ -45,6 +52,12 @@ var preview = {
 *
 * Return 	value from key enabled (boolean)
 */
+function change(key){
+  key = true;
+  return typeof preview.enabled
+}
+
+change(preview.enabled);
 
 /*
 * Function that retrieves the urls only from the key "resolutions" 
@@ -52,7 +65,11 @@ var preview = {
 * 
 * Return 	urls (array)
 */
+function getURL(key){
+  console.log(key)
+}
 
+console.log(getURL(preview.resolutions));
 /*
 * Function that retrieves the first nested key and value pairing
 * from the values of "images", stores them in a new object called 
