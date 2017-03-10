@@ -83,3 +83,17 @@ getURL(preview.images[0].resolutions[0], preview.images[0].resolutions[1])
 *
 * Return 	allKeyValuePairs (object)
 */
+function get(key){
+  var allKeyValuePairs = {
+    keys: [],
+    values: []
+  };
+  for (var i in key){
+  allKeyValuePairs.keys.push(i);
+  allKeyValuePairs.values.push(preview.images[0][i])
+}
+
+return allKeyValuePairs
+}
+
+get(preview.images[0])
